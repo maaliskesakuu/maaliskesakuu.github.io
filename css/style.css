@@ -4,7 +4,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   color: #b3b3b3;
-  background: #fff;
+  background: lightyellow;
 }
 
 a {
@@ -52,7 +52,7 @@ textarea.form-control {
 }
 
 .btn.btn-primary {
-  color: #fff;
+  color: lightyellow;
   border-width: 2px;
 }
 
@@ -249,11 +249,11 @@ body.offcanvas-open .site-wrap {
 }
 
 .offcanvas-toggle.light {
-  color: #fff;
+  color: lightyellow;
 }
 
 .offcanvas-toggle.light:hover {
-  color: #fff;
+  color: lightyellow;
   opacity: .7;
 }
 
