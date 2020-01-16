@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
-  color: #b3b3b3;
+  color: rgb(29, 29, 29);
   background: lightyellow;
 }
 
@@ -148,7 +148,7 @@ header .navbar .nav-link {
 }
 
 header .navbar .nav-link.active {
-  color: #fff;
+  color: lightyellow;
 }
 
 header .navbar .dropdown-menu {
@@ -522,7 +522,7 @@ main {
 .event-list-item .date {
   border-right: 1px solid #ccc;
   text-transform: uppercase;
-  color: #b3b3b3;
+  color: #292929;
 }
 
 .event-list-item .more {
