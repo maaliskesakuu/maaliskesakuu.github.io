@@ -181,12 +181,12 @@ header .navbar .dropdown-menu:before {
 }
 
 header .navbar .dropdown-menu .dropdown-item:hover {
-  background: #3b141b;
+  background: #fdfbfc;
   color: #fff;
 }
 
 header .navbar .dropdown-menu .dropdown-item.active {
-  background: #3b141b;
+  background: #fdfbfc;
   color: #fff;
 }
 
@@ -196,7 +196,7 @@ header .navbar .dropdown-menu a {
 }
 
 header .navbar .cta-btn a {
-  background: #3b141b;
+  background: #fdfbfc;
   color: #000 !important;
   padding-left: 20px !important;
   padding-right: 20px !important;
@@ -291,7 +291,7 @@ body.offcanvas-open .site-wrap {
 }
 
 .offcanvas_menu ul li.active a {
-  color: #3b141b;
+  color: #bbb7b9;
 }
 
 .offcanvas_menu ul.social li {
