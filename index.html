@@ -28,10 +28,16 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   </head>
   <body>
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
     
-    <div class="site-wrap">
+    <div class="site-wrap hide">
 
       <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
       <div class="offcanvas_menu" id="offcanvas_menu">
@@ -54,8 +60,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
       </div>
       
-      <aside style="background-image: url(img/alligaattori_1.jpg);"></aside>
+      <aside style="background-image: url(img/alligaattori_1.jpg);" data-aos="fade-left"></aside>
       <main>
+
         <h1 class="mb-0">Hi, I'm Tanja Lehtinen</h1>
         <div class="mb-5">
         <p class="lead mb-3">Full Stack Web Development Student</p>
@@ -114,6 +121,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </div>
 
     <!-- loader -->
+
     <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -125,11 +133,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/main.js"></script>
     
     <script>
-      var link = '//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f';
+      var link = '//api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&APPID=eb176a66e13d4a5d0d58a22e4a181d8f';
       var callback = function(data) {
-        alert(JSON.stringify(data));
+        console.log(data);
+        console.log('The weather in ' + data.name + ' now is ' + data.main.temp + ' degree celcius');
       }
       $.getJSON(link, callback);
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      setTimeout(function() {
+        AOS.init()
+        }, 3500);
     </script>
   </body>
 </html>

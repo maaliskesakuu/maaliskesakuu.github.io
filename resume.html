@@ -28,10 +28,15 @@
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <div class="spinner">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
     
-    <div class="site-wrap">
+    <div class="site-wrap hide">
 
       <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
       <div class="offcanvas_menu" id="offcanvas_menu">
@@ -53,49 +58,49 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
       </div>
       
-      <aside style="background-image: url(img/alligaattori_1.jpg);"></aside>
+      <aside style="background-image: url(img/alligaattori_1.jpg);" data-aos="fade-left"></aside>
       <main>
         <a href="index.html" class="home-button"><span class="fa fa-home"></span></a>
-        <h1 class="mb-5">Experience</h1>
+        <h1 class="mb-5" data-aos="fade-left">Experience</h1>
         <div class="mb-5">
-          <ul class="resume-list">
+          <ul class="resume-list" data-aos="fade-left">
             <li>
               <h3>Team Lead, Julkisten ja hyvinvointialojen työttömyyskassa</h3>
               <p class="date">Sep 2016 - Present</p>
-              <p>Supervision of work, assenting flexible working time, etc.</p>
+              <p >Supervision of work, assenting flexible working time, etc.</p>
             </li>
             <li>
               <h3>Corresponding Benefits Officer, Julkisten ja hyvinvointialojen työttömyyskassa</h3>
               <p class="date">Mar 2016 - Sep 2016</p>
-              <p>Processing earnings-related unemployment allowance applications + training others.</p>
+              <p >Processing earnings-related unemployment allowance applications + training others.</p>
             </li>
 
             <li>
               <h3>Benefits Officer, Erityiskoulutettujen työttömyyskassa</h3>
               <p class="date">May 2010 - Mar 2016</p>
-              <p>Processing earnings-related unemployment allowance and alternation compensation applications.</p>
+              <p >Processing earnings-related unemployment allowance and alternation compensation applications.</pdata-aos="fade-left">
             </li>
             <li>
               <h3>Benefits Officer, IAET-kassa</h3>
               <p class="date">May 2009 - April 2010</p>
-              <p>Processing earnings-related unemployment allowance applications. </p>
+              <p >Processing earnings-related unemployment allowance applications. </p>
             </li>
             <li>
               <h3>Product Purchaser, Koivunen Oy</h3>
               <p class="date">March 2001 - May 2009</p>
-              <p>My main task was purchasing car chemicals from Finland and abroad.</p>
+              <p >My main task was purchasing car chemicals from Finland and abroad.</p>
             </li>
           </ul>
         </div>
 
 
-        <h1 class="mb-5">Education</h1>
+        <h1 class="mb-5" data-aos="fade-left">Education</h1>
         <div class="mb-5">
-          <ul class="resume-list">
+          <ul class="resume-list" data-aos="fade-left">
             <li>
               <h3>University of Helsinki</h3>
               <p class="date">1995 - 2000</p>
-              <p>Master of Arts, Cultural Anthropology</p>
+              <p >Master of Arts, Cultural Anthropology</p>
             </li>
             
           </ul>
@@ -114,7 +119,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countdown.min.js"></script>
     <script src="js/main.js"></script>
-  
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      setTimeout(function() {
+        AOS.init()
+        }, 3500);
+    </script>
 
   </body>
 </html>

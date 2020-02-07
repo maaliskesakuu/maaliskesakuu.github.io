@@ -1,5 +1,14 @@
 (function($) {
 
+  $(document).ready(function () {
+    $('body').prepend('<div class="spinner"></div>')
+    $('site-wrap').addClass('hide');
+    setTimeout(function () {
+      $('.spinner').addClass('hide');
+      $('.site-wrap').removeClass('hide');
+    }, 3000);
+  }),
+
 	'use strict';
 
 	// bootstrap dropdown hover
