@@ -20,7 +20,7 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: "Playfair Display", times, serif;
+  font-family: 'Francois One', sans-serif;
 }
 
 .btn, .form-control {
@@ -1508,6 +1508,7 @@ main {
 }
 
 #button_weather {
+  font-family: 'Francois One', sans-serif;
   display: inline-block;
   box-sizing: border-box;
   background-color: rgb(247, 56, 89);
