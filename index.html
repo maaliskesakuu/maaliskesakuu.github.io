@@ -74,6 +74,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           <a href="#" class="mr-2 mb-2">Facebook</a>
           <a href="#" class="mr-2 mb-2">Instagram</a> 
        </p>
+        <p><a id="button_weather"></a></p>
        
         <!-- <h2 class="mb-4 mt-5">Services</h2>
         <div class="row">
@@ -133,12 +134,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="js/main.js"></script>
     
     <script>
-      var link = '//api.openweathermap.org/data/2.5/weather?q=helsinki&units=metric&APPID=eb176a66e13d4a5d0d58a22e4a181d8f';
-      var callback = function(data) {
-        console.log(data);
-        console.log('The weather in ' + data.name + ' now is ' + data.main.temp + ' degree celcius');
-      }
-      $.getJSON(link, callback);
+      $.ajax({
+        url: "//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f&units=metric"}).done(function (resp) {
+          console.log(resp);
+            $('#button_weather').text(
+            "Helsinki " 
+            + "is "
+            + resp.main.temp
+            + " °C "
+            + "and it feels like "
+            + resp.main.feels_like
+            + " °C"
+          );
+        });  
     </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

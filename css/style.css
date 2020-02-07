@@ -1506,3 +1506,27 @@ main {
     -webkit-transform: rotate(-360deg);
   }
 }
+
+#button_weather {
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgb(247, 56, 89);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.6rem;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 40px;
+  position: relative;
+  padding: 5px;
+  transition: background-color .5s;
+  z-index: 1000;
+}
+#button_weather:hover {
+  cursor: none;
+  background-color:#333;
+}
+
