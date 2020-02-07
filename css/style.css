@@ -241,11 +241,15 @@ body.offcanvas-open .site-wrap {
   font-size: 13px;
   top: 20px;
   color: #000;
+  background-color: white;
+  opacity: .8;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 .offcanvas-toggle:hover {
   color: #000;
-  opacity: .7;
+  opacity: .6;
 }
 
 .offcanvas-toggle.light {
@@ -266,7 +270,7 @@ body.offcanvas-open .site-wrap {
   overflow: scroll;
   z-index: 100;
   width: 240px;
-  background: #283149;
+  background: #555;
   padding: 20px 30px;
 }
 
@@ -291,7 +295,7 @@ body.offcanvas-open .site-wrap {
 }
 
 .offcanvas_menu ul li.active a {
-  color: #bbb7b9;
+  color: rgb(247, 56, 89);
 }
 
 .offcanvas_menu ul.social li {
@@ -1513,7 +1517,7 @@ main {
   box-sizing: border-box;
   background-color: rgb(247, 56, 89);
   color: white;
-  font-size: 1.2em;
+  font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.6rem;
   width: 300px;
@@ -1523,7 +1527,7 @@ main {
   margin-top: 40px;
   position: relative;
   padding: 5px;
-  transition: background-color .5s;
+  transition: background-color .3s;
   z-index: 1000;
 }
 #button_weather:hover {
