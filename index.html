@@ -29,15 +29,10 @@
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   </head>
   <body>
-    <div class="spinner">
-      <div class="cube1"></div>
-      <div class="cube2"></div>
-    </div>
-    
+
     <div class="site-wrap hide">
 
       <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
@@ -60,14 +55,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
       </div>
-      
-      <aside style="background-image: url(img/alligaattori_1.jpg);"></aside>
+
       <main>
 
         <h1 class="mb-0">Hi, I'm Tanja Lehtinen</h1>
         <div class="mb-5">
-        <p class="lead mb-3">Full Stack Web Development Student</p>
-        <p>I study Full Stack Web Development full-time in Business College Helsinki. I am on a study leave which is a truly amazing opportunity for adults wanting to update their know-how.    </p>
+        <p class="lead mb-3"> Student of Full Stack Web Development</p>
+        <p>I study Full Stack Web Development full-time in Business College Helsinki. I am on a study leave which is a truly amazing opportunity for adults wanting to update their skills and know-how.    </p>
         <p>Through these pages you can get to know me better.</p>
         </div>
 
@@ -75,7 +69,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           <a href="#" class="mr-2 mb-2">Facebook</a>
           <a href="#" class="mr-2 mb-2">Instagram</a> 
        </p>
-        <p><a id="button_weather"></a></p>
+        <p data-aos="fade-up"><a id="button_weather"></a></p>
        
         <!-- <h2 class="mb-4 mt-5">Services</h2>
         <div class="row">
@@ -139,22 +133,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         url: "//api.openweathermap.org/data/2.5/weather?q=helsinki&APPID=eb176a66e13d4a5d0d58a22e4a181d8f&units=metric"}).done(function (resp) {
           console.log(resp);
             $('#button_weather').text(
-            "Helsinki " 
-            + "is "
+            "It is " 
             + resp.main.temp
-            + " °C "
-            + "and it feels like "
+            + " °C in Helsinki which feels like "
             + resp.main.feels_like
-            + " °C"
+            + " °C "
           );
         });  
     </script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      setTimeout(function() {
-        AOS.init()
-        }, 3500);
-    </script>
   </body>
 </html>

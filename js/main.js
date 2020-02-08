@@ -1,13 +1,25 @@
 (function($) {
 
+  $('head').append('<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />');
+
+  $('body').append('<script src="https://unpkg.com/aos@next/dist/aos.js"></script>');
+ 
+  $('.resume-list li').attr('data-aos', 'fade-up');
+  setTimeout(function() {
+    AOS.init()
+  }, 3000);
+  
   $(document).ready(function () {
-    $('body').prepend('<div class="spinner"></div>')
-    $('site-wrap').addClass('hide');
+    
+    $('.site-wrap').prepend('<aside style="background-image: url(img/alligaattori_1.jpg);"></aside>');
+    $('body').prepend('<div class="spinner"><div class="cube1"></div><div class="cube2"></div></div>');
+    $('.site-wrap').addClass('hide');
     setTimeout(function () {
       $('.spinner').addClass('hide');
       $('.site-wrap').removeClass('hide');
     }, 2400);
   }),
+
 
 	'use strict';
 
